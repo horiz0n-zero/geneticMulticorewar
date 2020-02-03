@@ -10,6 +10,7 @@
 #import <MetalKit/MetalKit.h>
 #import "Utility.h"
 #import "Bounds.h"
+#include "./libcorewar/includes/libcorewar.h"
 #include "./libmutlicorewar/metal.h"
 
 NS_ASSUME_NONNULL_BEGIN

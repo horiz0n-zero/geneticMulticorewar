@@ -24,6 +24,8 @@
                                                                              error:&error];
     self->_pipelineStateRun = [self->_device newComputePipelineStateWithFunction:[self->_library newFunctionWithName:@"vm_run"]
                                                                            error:&error];
+    
+    
     return self;
 }
 - (id<MTLDevice>)device {

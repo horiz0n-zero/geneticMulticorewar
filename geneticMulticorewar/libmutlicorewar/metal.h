@@ -9,6 +9,8 @@
 #ifndef metal_h
 #define metal_h
 
+//# include <stdint.h>
+
 # define IND_SIZE 2
 # define REG_SIZE 1
 # define DIR_SIZE 4
@@ -58,7 +60,7 @@ struct                          vm_opcode_info
     const uint16_t              carry;
     const uint16_t              parameters_type[MAX_ARGS_NUMBER];
 } __attribute__((packed, aligned(2)));
-
+/*
 union                           vm_process_value {
     uint64_t                    v;
     struct {
@@ -77,11 +79,11 @@ union                           vm_process_value {
         # define OPCODE_PARAMETERS_TYPE_2(proc) ((proc->value.bits.opcode_parameters >> 4) & 0b11)
         # define OPCODE_PARAMETERS_TYPE_3(proc) ((proc->value.bits.opcode_parameters >> 2) & 0b11)
     } bits;
-};
+};*/
 struct                          vm_process {
     uint32_t                    registers[REG_NUMBER];
     uint32_t                    args[MAX_ARGS_NUMBER];
-    union vm_process_value      value;
+    // union vm_process_value      value;
     
 } __attribute__((packed, aligned(2)));
 

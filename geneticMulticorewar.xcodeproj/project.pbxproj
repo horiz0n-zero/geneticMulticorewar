@@ -12,6 +12,80 @@
 		887C2B2A23E5888100C9329A /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B2923E5888100C9329A /* Utility.m */; };
 		887C2B2D23E59EE600C9329A /* Multicorewar.m in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B2C23E59EE600C9329A /* Multicorewar.m */; };
 		887C2B3023E59F8200C9329A /* Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B2F23E59F8200C9329A /* Bounds.m */; };
+		C4DF9E6123E8614E0014DA54 /* operands.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5623E8614B0014DA54 /* operands.c */; };
+		C4DF9E6223E8614E0014DA54 /* zjmp.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5723E8614B0014DA54 /* zjmp.c */; };
+		C4DF9E6323E8614E0014DA54 /* ld.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5823E8614C0014DA54 /* ld.c */; };
+		C4DF9E6423E8614E0014DA54 /* ldi.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5923E8614C0014DA54 /* ldi.c */; };
+		C4DF9E6523E8614E0014DA54 /* fork.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5A23E8614C0014DA54 /* fork.c */; };
+		C4DF9E6623E8614E0014DA54 /* live.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5B23E8614C0014DA54 /* live.c */; };
+		C4DF9E6723E8614E0014DA54 /* lld.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5C23E8614D0014DA54 /* lld.c */; };
+		C4DF9E6823E8614E0014DA54 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5D23E8614D0014DA54 /* st.c */; };
+		C4DF9E6923E8614E0014DA54 /* aff.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5E23E8614D0014DA54 /* aff.c */; };
+		C4DF9E6A23E8614E0014DA54 /* sti.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E5F23E8614D0014DA54 /* sti.c */; };
+		C4DF9E6B23E8614E0014DA54 /* lldi.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E6023E8614E0014DA54 /* lldi.c */; };
+		C4DF9E7123E861BC0014DA54 /* libcorewar_states_opcode.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E6C23E861BB0014DA54 /* libcorewar_states_opcode.c */; };
+		C4DF9E7223E861BC0014DA54 /* libcorewar_states_header.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E6D23E861BB0014DA54 /* libcorewar_states_header.c */; };
+		C4DF9E7323E861BC0014DA54 /* oe.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E6E23E861BC0014DA54 /* oe.c */; };
+		C4DF9E7423E861BC0014DA54 /* libcorewar_states_skip.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E6F23E861BC0014DA54 /* libcorewar_states_skip.c */; };
+		C4DF9E7523E861BC0014DA54 /* libcorewar_states_unexpected.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7023E861BC0014DA54 /* libcorewar_states_unexpected.c */; };
+		C4DF9E7E23E861E90014DA54 /* ft_bprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7623E861E60014DA54 /* ft_bprintf.c */; };
+		C4DF9E7F23E861E90014DA54 /* ft_asprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7723E861E70014DA54 /* ft_asprintf.c */; };
+		C4DF9E8023E861E90014DA54 /* ft_vprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7823E861E70014DA54 /* ft_vprintf.c */; };
+		C4DF9E8123E861E90014DA54 /* ft_vdprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7923E861E70014DA54 /* ft_vdprintf.c */; };
+		C4DF9E8223E861E90014DA54 /* ft_printf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7A23E861E80014DA54 /* ft_printf.c */; };
+		C4DF9E8323E861E90014DA54 /* ft_dprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7B23E861E80014DA54 /* ft_dprintf.c */; };
+		C4DF9E8423E861E90014DA54 /* ft_vbprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7C23E861E80014DA54 /* ft_vbprintf.c */; };
+		C4DF9E8523E861E90014DA54 /* ft_vasprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E7D23E861E80014DA54 /* ft_vasprintf.c */; };
+		C4DF9E9023E862090014DA54 /* ft_printf_array_loop_int.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8623E862080014DA54 /* ft_printf_array_loop_int.c */; };
+		C4DF9E9123E862090014DA54 /* ft_printf_numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8723E862080014DA54 /* ft_printf_numbers.c */; };
+		C4DF9E9223E862090014DA54 /* ft_printf_array_loop_void.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8823E862080014DA54 /* ft_printf_array_loop_void.c */; };
+		C4DF9E9323E862090014DA54 /* ft_printf_array_loop_stars.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8923E862090014DA54 /* ft_printf_array_loop_stars.c */; };
+		C4DF9E9423E862090014DA54 /* ft_printf_array_loop_long.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8A23E862090014DA54 /* ft_printf_array_loop_long.c */; };
+		C4DF9E9523E862090014DA54 /* ft_printf_array.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8B23E862090014DA54 /* ft_printf_array.c */; };
+		C4DF9E9623E862090014DA54 /* ft_printf_core_process.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8C23E862090014DA54 /* ft_printf_core_process.c */; };
+		C4DF9E9723E862090014DA54 /* ft_printf_array_loop_char.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8D23E862090014DA54 /* ft_printf_array_loop_char.c */; };
+		C4DF9E9823E862090014DA54 /* ft_printf_core.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8E23E862090014DA54 /* ft_printf_core.c */; };
+		C4DF9E9923E862090014DA54 /* ft_printf_array_loop_short.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E8F23E862090014DA54 /* ft_printf_array_loop_short.c */; };
+		C4DF9EA823E862220014DA54 /* c.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9A23E862210014DA54 /* c.c */; };
+		C4DF9EA923E862220014DA54 /* p.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9B23E862210014DA54 /* p.c */; };
+		C4DF9EAA23E862220014DA54 /* void.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9C23E862220014DA54 /* void.c */; };
+		C4DF9EAB23E862220014DA54 /* ee.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9D23E862220014DA54 /* ee.c */; };
+		C4DF9EAC23E862220014DA54 /* x.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9E23E862220014DA54 /* x.c */; };
+		C4DF9EAD23E862220014DA54 /* i.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9E9F23E862220014DA54 /* i.c */; };
+		C4DF9EAE23E862220014DA54 /* b.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA023E862220014DA54 /* b.c */; };
+		C4DF9EAF23E862220014DA54 /* u.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA123E862220014DA54 /* u.c */; };
+		C4DF9EB023E862220014DA54 /* w.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA223E862220014DA54 /* w.c */; };
+		C4DF9EB123E862220014DA54 /* o.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA323E862220014DA54 /* o.c */; };
+		C4DF9EB223E862220014DA54 /* e.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA423E862220014DA54 /* e.c */; };
+		C4DF9EB323E862220014DA54 /* percent.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA523E862220014DA54 /* percent.c */; };
+		C4DF9EB423E862220014DA54 /* xx.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA623E862220014DA54 /* xx.c */; };
+		C4DF9EB523E862220014DA54 /* s.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF9EA723E862220014DA54 /* s.c */; };
+		C4E1FDAB23E8519000E2EF22 /* libcorewar_get_opcode.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD8F23E8518E00E2EF22 /* libcorewar_get_opcode.c */; };
+		C4E1FDAC23E8519000E2EF22 /* libcorewar_get_src_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9023E8518E00E2EF22 /* libcorewar_get_src_file.c */; };
+		C4E1FDAD23E8519000E2EF22 /* arguments_get.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9223E8518F00E2EF22 /* arguments_get.c */; };
+		C4E1FDAE23E8519000E2EF22 /* libcorewar_color.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9323E8518F00E2EF22 /* libcorewar_color.c */; };
+		C4E1FDAF23E8519000E2EF22 /* libcorewar_out_src_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9423E8518F00E2EF22 /* libcorewar_out_src_file.c */; };
+		C4E1FDB023E8519000E2EF22 /* ft_memcopy.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9523E8518F00E2EF22 /* ft_memcopy.c */; };
+		C4E1FDB123E8519000E2EF22 /* libcorewar_get_cor_instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9623E8518F00E2EF22 /* libcorewar_get_cor_instructions.c */; };
+		C4E1FDB223E8519000E2EF22 /* libcorewar_arena_cycle_check.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9723E8518F00E2EF22 /* libcorewar_arena_cycle_check.c */; };
+		C4E1FDB323E8519000E2EF22 /* ft_strlen.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9823E8518F00E2EF22 /* ft_strlen.c */; };
+		C4E1FDB423E8519000E2EF22 /* ft_static_world.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9923E8518F00E2EF22 /* ft_static_world.c */; };
+		C4E1FDB523E8519000E2EF22 /* ft_hash_src.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9A23E8518F00E2EF22 /* ft_hash_src.c */; };
+		C4E1FDB623E8519000E2EF22 /* libcorewar_dump.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9B23E8518F00E2EF22 /* libcorewar_dump.c */; };
+		C4E1FDB723E8519000E2EF22 /* libcorewar_error.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9C23E8518F00E2EF22 /* libcorewar_error.c */; };
+		C4E1FDB823E8519000E2EF22 /* libcorewar_get_arena.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9D23E8518F00E2EF22 /* libcorewar_get_arena.c */; };
+		C4E1FDB923E8519000E2EF22 /* ft_memalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FD9E23E8518F00E2EF22 /* ft_memalloc.c */; };
+		C4E1FDBA23E8519000E2EF22 /* libcorewar_bswap.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA023E8518F00E2EF22 /* libcorewar_bswap.c */; };
+		C4E1FDBB23E8519000E2EF22 /* libcorewar_get_cor_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA123E8519000E2EF22 /* libcorewar_get_cor_file.c */; };
+		C4E1FDBC23E8519000E2EF22 /* ft_src_number.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA223E8519000E2EF22 /* ft_src_number.c */; };
+		C4E1FDBD23E8519000E2EF22 /* libcorewar_arena_cycle.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA323E8519000E2EF22 /* libcorewar_arena_cycle.c */; };
+		C4E1FDBE23E8519000E2EF22 /* libcorewar_get_asm_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA423E8519000E2EF22 /* libcorewar_get_asm_file.c */; };
+		C4E1FDBF23E8519000E2EF22 /* libcorewar_out_asm_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA523E8519000E2EF22 /* libcorewar_out_asm_file.c */; };
+		C4E1FDC023E8519000E2EF22 /* ft_strcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA623E8519000E2EF22 /* ft_strcmp.c */; };
+		C4E1FDC123E8519000E2EF22 /* libcorewar_process.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA723E8519000E2EF22 /* libcorewar_process.c */; };
+		C4E1FDC223E8519000E2EF22 /* libcorewar_unset_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA823E8519000E2EF22 /* libcorewar_unset_file.c */; };
+		C4E1FDC323E8519000E2EF22 /* libcorewar_encoded_parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDA923E8519000E2EF22 /* libcorewar_encoded_parameters.c */; };
+		C4E1FDC423E8519000E2EF22 /* libcorewar_unset_arena.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E1FDAA23E8519000E2EF22 /* libcorewar_unset_arena.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +111,84 @@
 		887C2B2C23E59EE600C9329A /* Multicorewar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Multicorewar.m; sourceTree = "<group>"; };
 		887C2B2E23E59F8200C9329A /* Bounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bounds.h; sourceTree = "<group>"; };
 		887C2B2F23E59F8200C9329A /* Bounds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bounds.m; sourceTree = "<group>"; };
+		C4DF9E5623E8614B0014DA54 /* operands.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = operands.c; path = geneticMulticorewar/libcorewar/cycles/operands.c; sourceTree = "<group>"; };
+		C4DF9E5723E8614B0014DA54 /* zjmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zjmp.c; path = geneticMulticorewar/libcorewar/cycles/zjmp.c; sourceTree = "<group>"; };
+		C4DF9E5823E8614C0014DA54 /* ld.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ld.c; path = geneticMulticorewar/libcorewar/cycles/ld.c; sourceTree = "<group>"; };
+		C4DF9E5923E8614C0014DA54 /* ldi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ldi.c; path = geneticMulticorewar/libcorewar/cycles/ldi.c; sourceTree = "<group>"; };
+		C4DF9E5A23E8614C0014DA54 /* fork.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fork.c; path = geneticMulticorewar/libcorewar/cycles/fork.c; sourceTree = "<group>"; };
+		C4DF9E5B23E8614C0014DA54 /* live.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = live.c; path = geneticMulticorewar/libcorewar/cycles/live.c; sourceTree = "<group>"; };
+		C4DF9E5C23E8614D0014DA54 /* lld.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = lld.c; path = geneticMulticorewar/libcorewar/cycles/lld.c; sourceTree = "<group>"; };
+		C4DF9E5D23E8614D0014DA54 /* st.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = st.c; path = geneticMulticorewar/libcorewar/cycles/st.c; sourceTree = "<group>"; };
+		C4DF9E5E23E8614D0014DA54 /* aff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aff.c; path = geneticMulticorewar/libcorewar/cycles/aff.c; sourceTree = "<group>"; };
+		C4DF9E5F23E8614D0014DA54 /* sti.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sti.c; path = geneticMulticorewar/libcorewar/cycles/sti.c; sourceTree = "<group>"; };
+		C4DF9E6023E8614E0014DA54 /* lldi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = lldi.c; path = geneticMulticorewar/libcorewar/cycles/lldi.c; sourceTree = "<group>"; };
+		C4DF9E6C23E861BB0014DA54 /* libcorewar_states_opcode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = libcorewar_states_opcode.c; path = geneticMulticorewar/libcorewar/states/libcorewar_states_opcode.c; sourceTree = "<group>"; };
+		C4DF9E6D23E861BB0014DA54 /* libcorewar_states_header.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = libcorewar_states_header.c; path = geneticMulticorewar/libcorewar/states/libcorewar_states_header.c; sourceTree = "<group>"; };
+		C4DF9E6E23E861BC0014DA54 /* oe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = oe.c; path = geneticMulticorewar/libcorewar/states/oe.c; sourceTree = "<group>"; };
+		C4DF9E6F23E861BC0014DA54 /* libcorewar_states_skip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = libcorewar_states_skip.c; path = geneticMulticorewar/libcorewar/states/libcorewar_states_skip.c; sourceTree = "<group>"; };
+		C4DF9E7023E861BC0014DA54 /* libcorewar_states_unexpected.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = libcorewar_states_unexpected.c; path = geneticMulticorewar/libcorewar/states/libcorewar_states_unexpected.c; sourceTree = "<group>"; };
+		C4DF9E7623E861E60014DA54 /* ft_bprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_bprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_bprintf.c; sourceTree = "<group>"; };
+		C4DF9E7723E861E70014DA54 /* ft_asprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_asprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_asprintf.c; sourceTree = "<group>"; };
+		C4DF9E7823E861E70014DA54 /* ft_vprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_vprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_vprintf.c; sourceTree = "<group>"; };
+		C4DF9E7923E861E70014DA54 /* ft_vdprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_vdprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_vdprintf.c; sourceTree = "<group>"; };
+		C4DF9E7A23E861E80014DA54 /* ft_printf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_printf.c; sourceTree = "<group>"; };
+		C4DF9E7B23E861E80014DA54 /* ft_dprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_dprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_dprintf.c; sourceTree = "<group>"; };
+		C4DF9E7C23E861E80014DA54 /* ft_vbprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_vbprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_vbprintf.c; sourceTree = "<group>"; };
+		C4DF9E7D23E861E80014DA54 /* ft_vasprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_vasprintf.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/ft_vasprintf.c; sourceTree = "<group>"; };
+		C4DF9E8623E862080014DA54 /* ft_printf_array_loop_int.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_int.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_int.c; sourceTree = "<group>"; };
+		C4DF9E8723E862080014DA54 /* ft_printf_numbers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_numbers.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_numbers.c; sourceTree = "<group>"; };
+		C4DF9E8823E862080014DA54 /* ft_printf_array_loop_void.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_void.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_void.c; sourceTree = "<group>"; };
+		C4DF9E8923E862090014DA54 /* ft_printf_array_loop_stars.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_stars.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_stars.c; sourceTree = "<group>"; };
+		C4DF9E8A23E862090014DA54 /* ft_printf_array_loop_long.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_long.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_long.c; sourceTree = "<group>"; };
+		C4DF9E8B23E862090014DA54 /* ft_printf_array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array.c; sourceTree = "<group>"; };
+		C4DF9E8C23E862090014DA54 /* ft_printf_core_process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_core_process.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_core_process.c; sourceTree = "<group>"; };
+		C4DF9E8D23E862090014DA54 /* ft_printf_array_loop_char.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_char.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_char.c; sourceTree = "<group>"; };
+		C4DF9E8E23E862090014DA54 /* ft_printf_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_core.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_core.c; sourceTree = "<group>"; };
+		C4DF9E8F23E862090014DA54 /* ft_printf_array_loop_short.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_printf_array_loop_short.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/ft_printf_array_loop_short.c; sourceTree = "<group>"; };
+		C4DF9E9A23E862210014DA54 /* c.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = c.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/c.c; sourceTree = "<group>"; };
+		C4DF9E9B23E862210014DA54 /* p.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = p.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/p.c; sourceTree = "<group>"; };
+		C4DF9E9C23E862220014DA54 /* void.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = void.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/void.c; sourceTree = "<group>"; };
+		C4DF9E9D23E862220014DA54 /* ee.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ee.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/ee.c; sourceTree = "<group>"; };
+		C4DF9E9E23E862220014DA54 /* x.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = x.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/x.c; sourceTree = "<group>"; };
+		C4DF9E9F23E862220014DA54 /* i.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = i.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/i.c; sourceTree = "<group>"; };
+		C4DF9EA023E862220014DA54 /* b.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = b.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/b.c; sourceTree = "<group>"; };
+		C4DF9EA123E862220014DA54 /* u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = u.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/u.c; sourceTree = "<group>"; };
+		C4DF9EA223E862220014DA54 /* w.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = w.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/w.c; sourceTree = "<group>"; };
+		C4DF9EA323E862220014DA54 /* o.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = o.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/o.c; sourceTree = "<group>"; };
+		C4DF9EA423E862220014DA54 /* e.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = e.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/e.c; sourceTree = "<group>"; };
+		C4DF9EA523E862220014DA54 /* percent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = percent.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/percent.c; sourceTree = "<group>"; };
+		C4DF9EA623E862220014DA54 /* xx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = xx.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/xx.c; sourceTree = "<group>"; };
+		C4DF9EA723E862220014DA54 /* s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = s.c; path = geneticMulticorewar/libcorewar/libft_printf/sources/core/conversions/s.c; sourceTree = "<group>"; };
+		C4E1FD8E23E8518E00E2EF22 /* cycles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cycles; sourceTree = "<group>"; };
+		C4E1FD8F23E8518E00E2EF22 /* libcorewar_get_opcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_opcode.c; sourceTree = "<group>"; };
+		C4E1FD9023E8518E00E2EF22 /* libcorewar_get_src_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_src_file.c; sourceTree = "<group>"; };
+		C4E1FD9123E8518F00E2EF22 /* libft_printf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libft_printf; sourceTree = "<group>"; };
+		C4E1FD9223E8518F00E2EF22 /* arguments_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arguments_get.c; sourceTree = "<group>"; };
+		C4E1FD9323E8518F00E2EF22 /* libcorewar_color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_color.c; sourceTree = "<group>"; };
+		C4E1FD9423E8518F00E2EF22 /* libcorewar_out_src_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_out_src_file.c; sourceTree = "<group>"; };
+		C4E1FD9523E8518F00E2EF22 /* ft_memcopy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_memcopy.c; sourceTree = "<group>"; };
+		C4E1FD9623E8518F00E2EF22 /* libcorewar_get_cor_instructions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_cor_instructions.c; sourceTree = "<group>"; };
+		C4E1FD9723E8518F00E2EF22 /* libcorewar_arena_cycle_check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_arena_cycle_check.c; sourceTree = "<group>"; };
+		C4E1FD9823E8518F00E2EF22 /* ft_strlen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strlen.c; sourceTree = "<group>"; };
+		C4E1FD9923E8518F00E2EF22 /* ft_static_world.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_static_world.c; sourceTree = "<group>"; };
+		C4E1FD9A23E8518F00E2EF22 /* ft_hash_src.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_hash_src.c; sourceTree = "<group>"; };
+		C4E1FD9B23E8518F00E2EF22 /* libcorewar_dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_dump.c; sourceTree = "<group>"; };
+		C4E1FD9C23E8518F00E2EF22 /* libcorewar_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_error.c; sourceTree = "<group>"; };
+		C4E1FD9D23E8518F00E2EF22 /* libcorewar_get_arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_arena.c; sourceTree = "<group>"; };
+		C4E1FD9E23E8518F00E2EF22 /* ft_memalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_memalloc.c; sourceTree = "<group>"; };
+		C4E1FD9F23E8518F00E2EF22 /* states */ = {isa = PBXFileReference; lastKnownFileType = folder; path = states; sourceTree = "<group>"; };
+		C4E1FDA023E8518F00E2EF22 /* libcorewar_bswap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_bswap.c; sourceTree = "<group>"; };
+		C4E1FDA123E8519000E2EF22 /* libcorewar_get_cor_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_cor_file.c; sourceTree = "<group>"; };
+		C4E1FDA223E8519000E2EF22 /* ft_src_number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_src_number.c; sourceTree = "<group>"; };
+		C4E1FDA323E8519000E2EF22 /* libcorewar_arena_cycle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_arena_cycle.c; sourceTree = "<group>"; };
+		C4E1FDA423E8519000E2EF22 /* libcorewar_get_asm_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_get_asm_file.c; sourceTree = "<group>"; };
+		C4E1FDA523E8519000E2EF22 /* libcorewar_out_asm_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_out_asm_file.c; sourceTree = "<group>"; };
+		C4E1FDA623E8519000E2EF22 /* ft_strcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strcmp.c; sourceTree = "<group>"; };
+		C4E1FDA723E8519000E2EF22 /* libcorewar_process.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_process.c; sourceTree = "<group>"; };
+		C4E1FDA823E8519000E2EF22 /* libcorewar_unset_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_unset_file.c; sourceTree = "<group>"; };
+		C4E1FDA923E8519000E2EF22 /* libcorewar_encoded_parameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_encoded_parameters.c; sourceTree = "<group>"; };
+		C4E1FDAA23E8519000E2EF22 /* libcorewar_unset_arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libcorewar_unset_arena.c; sourceTree = "<group>"; };
+		C4E1FDC523E852AB00E2EF22 /* includes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = includes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +205,54 @@
 		887C2B0F23E5830E00C9329A = {
 			isa = PBXGroup;
 			children = (
+				C4DF9EA023E862220014DA54 /* b.c */,
+				C4DF9E9A23E862210014DA54 /* c.c */,
+				C4DF9EA423E862220014DA54 /* e.c */,
+				C4DF9E9D23E862220014DA54 /* ee.c */,
+				C4DF9E9F23E862220014DA54 /* i.c */,
+				C4DF9EA323E862220014DA54 /* o.c */,
+				C4DF9E9B23E862210014DA54 /* p.c */,
+				C4DF9EA523E862220014DA54 /* percent.c */,
+				C4DF9EA723E862220014DA54 /* s.c */,
+				C4DF9EA123E862220014DA54 /* u.c */,
+				C4DF9E9C23E862220014DA54 /* void.c */,
+				C4DF9EA223E862220014DA54 /* w.c */,
+				C4DF9E9E23E862220014DA54 /* x.c */,
+				C4DF9EA623E862220014DA54 /* xx.c */,
+				C4DF9E8D23E862090014DA54 /* ft_printf_array_loop_char.c */,
+				C4DF9E8623E862080014DA54 /* ft_printf_array_loop_int.c */,
+				C4DF9E8A23E862090014DA54 /* ft_printf_array_loop_long.c */,
+				C4DF9E8F23E862090014DA54 /* ft_printf_array_loop_short.c */,
+				C4DF9E8923E862090014DA54 /* ft_printf_array_loop_stars.c */,
+				C4DF9E8823E862080014DA54 /* ft_printf_array_loop_void.c */,
+				C4DF9E8B23E862090014DA54 /* ft_printf_array.c */,
+				C4DF9E8C23E862090014DA54 /* ft_printf_core_process.c */,
+				C4DF9E8E23E862090014DA54 /* ft_printf_core.c */,
+				C4DF9E8723E862080014DA54 /* ft_printf_numbers.c */,
+				C4DF9E7723E861E70014DA54 /* ft_asprintf.c */,
+				C4DF9E7623E861E60014DA54 /* ft_bprintf.c */,
+				C4DF9E7B23E861E80014DA54 /* ft_dprintf.c */,
+				C4DF9E7A23E861E80014DA54 /* ft_printf.c */,
+				C4DF9E7D23E861E80014DA54 /* ft_vasprintf.c */,
+				C4DF9E7C23E861E80014DA54 /* ft_vbprintf.c */,
+				C4DF9E7923E861E70014DA54 /* ft_vdprintf.c */,
+				C4DF9E7823E861E70014DA54 /* ft_vprintf.c */,
+				C4DF9E6D23E861BB0014DA54 /* libcorewar_states_header.c */,
+				C4DF9E6C23E861BB0014DA54 /* libcorewar_states_opcode.c */,
+				C4DF9E6F23E861BC0014DA54 /* libcorewar_states_skip.c */,
+				C4DF9E7023E861BC0014DA54 /* libcorewar_states_unexpected.c */,
+				C4DF9E6E23E861BC0014DA54 /* oe.c */,
+				C4DF9E5E23E8614D0014DA54 /* aff.c */,
+				C4DF9E5A23E8614C0014DA54 /* fork.c */,
+				C4DF9E5823E8614C0014DA54 /* ld.c */,
+				C4DF9E5923E8614C0014DA54 /* ldi.c */,
+				C4DF9E5B23E8614C0014DA54 /* live.c */,
+				C4DF9E5C23E8614D0014DA54 /* lld.c */,
+				C4DF9E6023E8614E0014DA54 /* lldi.c */,
+				C4DF9E5623E8614B0014DA54 /* operands.c */,
+				C4DF9E5D23E8614D0014DA54 /* st.c */,
+				C4DF9E5F23E8614D0014DA54 /* sti.c */,
+				C4DF9E5723E8614B0014DA54 /* zjmp.c */,
 				887C2B1A23E5830E00C9329A /* geneticMulticorewar */,
 				887C2B1923E5830E00C9329A /* Products */,
 			);
@@ -85,6 +285,36 @@
 		887C2B2223E5831600C9329A /* libcorewar */ = {
 			isa = PBXGroup;
 			children = (
+				C4E1FDC523E852AB00E2EF22 /* includes */,
+				C4E1FD9223E8518F00E2EF22 /* arguments_get.c */,
+				C4E1FD8E23E8518E00E2EF22 /* cycles */,
+				C4E1FD9A23E8518F00E2EF22 /* ft_hash_src.c */,
+				C4E1FD9E23E8518F00E2EF22 /* ft_memalloc.c */,
+				C4E1FD9523E8518F00E2EF22 /* ft_memcopy.c */,
+				C4E1FDA223E8519000E2EF22 /* ft_src_number.c */,
+				C4E1FD9923E8518F00E2EF22 /* ft_static_world.c */,
+				C4E1FDA623E8519000E2EF22 /* ft_strcmp.c */,
+				C4E1FD9823E8518F00E2EF22 /* ft_strlen.c */,
+				C4E1FD9723E8518F00E2EF22 /* libcorewar_arena_cycle_check.c */,
+				C4E1FDA323E8519000E2EF22 /* libcorewar_arena_cycle.c */,
+				C4E1FDA023E8518F00E2EF22 /* libcorewar_bswap.c */,
+				C4E1FD9323E8518F00E2EF22 /* libcorewar_color.c */,
+				C4E1FD9B23E8518F00E2EF22 /* libcorewar_dump.c */,
+				C4E1FDA923E8519000E2EF22 /* libcorewar_encoded_parameters.c */,
+				C4E1FD9C23E8518F00E2EF22 /* libcorewar_error.c */,
+				C4E1FD9D23E8518F00E2EF22 /* libcorewar_get_arena.c */,
+				C4E1FDA423E8519000E2EF22 /* libcorewar_get_asm_file.c */,
+				C4E1FDA123E8519000E2EF22 /* libcorewar_get_cor_file.c */,
+				C4E1FD9623E8518F00E2EF22 /* libcorewar_get_cor_instructions.c */,
+				C4E1FD8F23E8518E00E2EF22 /* libcorewar_get_opcode.c */,
+				C4E1FD9023E8518E00E2EF22 /* libcorewar_get_src_file.c */,
+				C4E1FDA523E8519000E2EF22 /* libcorewar_out_asm_file.c */,
+				C4E1FD9423E8518F00E2EF22 /* libcorewar_out_src_file.c */,
+				C4E1FDA723E8519000E2EF22 /* libcorewar_process.c */,
+				C4E1FDAA23E8519000E2EF22 /* libcorewar_unset_arena.c */,
+				C4E1FDA823E8519000E2EF22 /* libcorewar_unset_file.c */,
+				C4E1FD9123E8518F00E2EF22 /* libft_printf */,
+				C4E1FD9F23E8518F00E2EF22 /* states */,
 			);
 			path = libcorewar;
 			sourceTree = "<group>";
@@ -155,11 +385,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DF9EA823E862220014DA54 /* c.c in Sources */,
+				C4DF9EA923E862220014DA54 /* p.c in Sources */,
+				C4DF9EAA23E862220014DA54 /* void.c in Sources */,
+				C4DF9EAB23E862220014DA54 /* ee.c in Sources */,
+				C4DF9EAC23E862220014DA54 /* x.c in Sources */,
+				C4DF9EAD23E862220014DA54 /* i.c in Sources */,
+				C4DF9EAE23E862220014DA54 /* b.c in Sources */,
+				C4DF9EAF23E862220014DA54 /* u.c in Sources */,
+				C4DF9EB023E862220014DA54 /* w.c in Sources */,
+				C4DF9EB123E862220014DA54 /* o.c in Sources */,
+				C4DF9EB223E862220014DA54 /* e.c in Sources */,
+				C4DF9EB323E862220014DA54 /* percent.c in Sources */,
+				C4DF9EB423E862220014DA54 /* xx.c in Sources */,
+				C4DF9EB523E862220014DA54 /* s.c in Sources */,
+				C4DF9E9023E862090014DA54 /* ft_printf_array_loop_int.c in Sources */,
+				C4DF9E9123E862090014DA54 /* ft_printf_numbers.c in Sources */,
+				C4DF9E9223E862090014DA54 /* ft_printf_array_loop_void.c in Sources */,
+				C4DF9E9323E862090014DA54 /* ft_printf_array_loop_stars.c in Sources */,
+				C4DF9E9423E862090014DA54 /* ft_printf_array_loop_long.c in Sources */,
+				C4DF9E9523E862090014DA54 /* ft_printf_array.c in Sources */,
+				C4DF9E9623E862090014DA54 /* ft_printf_core_process.c in Sources */,
+				C4DF9E9723E862090014DA54 /* ft_printf_array_loop_char.c in Sources */,
+				C4DF9E9823E862090014DA54 /* ft_printf_core.c in Sources */,
+				C4DF9E9923E862090014DA54 /* ft_printf_array_loop_short.c in Sources */,
+				C4DF9E7E23E861E90014DA54 /* ft_bprintf.c in Sources */,
+				C4DF9E7F23E861E90014DA54 /* ft_asprintf.c in Sources */,
+				C4DF9E8023E861E90014DA54 /* ft_vprintf.c in Sources */,
+				C4DF9E8123E861E90014DA54 /* ft_vdprintf.c in Sources */,
+				C4DF9E8223E861E90014DA54 /* ft_printf.c in Sources */,
+				C4DF9E8323E861E90014DA54 /* ft_dprintf.c in Sources */,
+				C4DF9E8423E861E90014DA54 /* ft_vbprintf.c in Sources */,
+				C4DF9E8523E861E90014DA54 /* ft_vasprintf.c in Sources */,
+				C4DF9E7123E861BC0014DA54 /* libcorewar_states_opcode.c in Sources */,
+				C4DF9E7223E861BC0014DA54 /* libcorewar_states_header.c in Sources */,
+				C4DF9E7323E861BC0014DA54 /* oe.c in Sources */,
+				C4DF9E7423E861BC0014DA54 /* libcorewar_states_skip.c in Sources */,
+				C4DF9E7523E861BC0014DA54 /* libcorewar_states_unexpected.c in Sources */,
+				C4DF9E6123E8614E0014DA54 /* operands.c in Sources */,
+				C4DF9E6223E8614E0014DA54 /* zjmp.c in Sources */,
+				C4DF9E6323E8614E0014DA54 /* ld.c in Sources */,
+				C4DF9E6423E8614E0014DA54 /* ldi.c in Sources */,
+				C4DF9E6523E8614E0014DA54 /* fork.c in Sources */,
+				C4DF9E6623E8614E0014DA54 /* live.c in Sources */,
+				C4DF9E6723E8614E0014DA54 /* lld.c in Sources */,
+				C4DF9E6823E8614E0014DA54 /* st.c in Sources */,
+				C4DF9E6923E8614E0014DA54 /* aff.c in Sources */,
+				C4DF9E6A23E8614E0014DA54 /* sti.c in Sources */,
+				C4DF9E6B23E8614E0014DA54 /* lldi.c in Sources */,
+				C4E1FDBD23E8519000E2EF22 /* libcorewar_arena_cycle.c in Sources */,
+				C4E1FDC023E8519000E2EF22 /* ft_strcmp.c in Sources */,
+				C4E1FDB823E8519000E2EF22 /* libcorewar_get_arena.c in Sources */,
+				C4E1FDAC23E8519000E2EF22 /* libcorewar_get_src_file.c in Sources */,
+				C4E1FDB423E8519000E2EF22 /* ft_static_world.c in Sources */,
+				C4E1FDB523E8519000E2EF22 /* ft_hash_src.c in Sources */,
+				C4E1FDC423E8519000E2EF22 /* libcorewar_unset_arena.c in Sources */,
+				C4E1FDBE23E8519000E2EF22 /* libcorewar_get_asm_file.c in Sources */,
+				C4E1FDAB23E8519000E2EF22 /* libcorewar_get_opcode.c in Sources */,
 				887C2B2523E583A700C9329A /* vm.metal in Sources */,
+				C4E1FDB223E8519000E2EF22 /* libcorewar_arena_cycle_check.c in Sources */,
 				887C2B3023E59F8200C9329A /* Bounds.m in Sources */,
 				887C2B2A23E5888100C9329A /* Utility.m in Sources */,
+				C4E1FDAF23E8519000E2EF22 /* libcorewar_out_src_file.c in Sources */,
+				C4E1FDC123E8519000E2EF22 /* libcorewar_process.c in Sources */,
+				C4E1FDBF23E8519000E2EF22 /* libcorewar_out_asm_file.c in Sources */,
+				C4E1FDBA23E8519000E2EF22 /* libcorewar_bswap.c in Sources */,
+				C4E1FDBC23E8519000E2EF22 /* ft_src_number.c in Sources */,
+				C4E1FDBB23E8519000E2EF22 /* libcorewar_get_cor_file.c in Sources */,
+				C4E1FDC323E8519000E2EF22 /* libcorewar_encoded_parameters.c in Sources */,
+				C4E1FDB323E8519000E2EF22 /* ft_strlen.c in Sources */,
+				C4E1FDB123E8519000E2EF22 /* libcorewar_get_cor_instructions.c in Sources */,
+				C4E1FDB023E8519000E2EF22 /* ft_memcopy.c in Sources */,
+				C4E1FDB923E8519000E2EF22 /* ft_memalloc.c in Sources */,
+				C4E1FDAD23E8519000E2EF22 /* arguments_get.c in Sources */,
+				C4E1FDC223E8519000E2EF22 /* libcorewar_unset_file.c in Sources */,
 				887C2B1C23E5830E00C9329A /* main.m in Sources */,
+				C4E1FDB723E8519000E2EF22 /* libcorewar_error.c in Sources */,
 				887C2B2D23E59EE600C9329A /* Multicorewar.m in Sources */,
+				C4E1FDAE23E8519000E2EF22 /* libcorewar_color.c in Sources */,
+				C4E1FDB623E8519000E2EF22 /* libcorewar_dump.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +585,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76BYA9T7S3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_UNROLL_LOOPS = NO;
+				MTL_LANGUAGE_REVISION = UseDeploymentTarget;
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -291,7 +600,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76BYA9T7S3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_UNROLL_LOOPS = NO;
+				MTL_LANGUAGE_REVISION = UseDeploymentTarget;
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

@@ -17,16 +17,16 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         _utility = [[Utility alloc] init];
-        printf("number of threads per group : %d\n", THREADS_TOTAL);
-        printf("number of groups :            %d\n", GROUPS_TOTAL);
-        printf("number of vm per bound :      %d\n\n", VM_TOTAL);
+        ft_printf("number of threads per group : %d\n", THREADS_TOTAL);
+        ft_printf("number of groups :            %d\n", GROUPS_TOTAL);
+        ft_printf("number of vm per bound :      %d\n\n", VM_TOTAL);
     
-        printf("sizeof %-20s   %s\n", "vm_opcode_info", [_utility bytesString:sizeof(struct vm_opcode_info)]);
-        printf("sizeof %-20s   %s\n", "vm_process", [_utility bytesString:sizeof(struct vm_process)]);
-        printf("sizeof %-20s   %s\n", "vm_champion", [_utility bytesString:sizeof(struct vm_champion)]);
-        printf("sizeof %-20s   %s\n\n", "vm_arena", [_utility bytesString:sizeof(struct vm_arena)]);
+        ft_printf("sizeof %-20s   %s\n", "vm_opcode_info", [_utility bytesString:sizeof(struct vm_opcode_info)]);
+        ft_printf("sizeof %-20s   %s\n", "vm_process", [_utility bytesString:sizeof(struct vm_process)]);
+        ft_printf("sizeof %-20s   %s\n", "vm_champion", [_utility bytesString:sizeof(struct vm_champion)]);
+        ft_printf("sizeof %-20s   %s\n\n", "vm_arena", [_utility bytesString:sizeof(struct vm_arena)]);
         
-        printf("sizeof %-20s   %s\n", "all vm", [_utility bytesString:sizeof(struct vm_arena) * VM_TOTAL]);
+        ft_printf("sizeof %-20s   %s\n", "all vm", [_utility bytesString:sizeof(struct vm_arena) * VM_TOTAL]);
         _multicorewar = [[Multicorewar alloc] init];
         
     }
