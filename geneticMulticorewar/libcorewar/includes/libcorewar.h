@@ -127,7 +127,6 @@ struct										s_libcorewar_cor_file // source is a valid .cor + padding 4
 	struct s_asm_header						*header;
 	void									*instructions;
 	size_t									length;
-	size_t									padded_length; // instructions size!
 };
 
 struct										s_libcorewar_opcode_src
@@ -179,9 +178,13 @@ int								libcorewar_get_opcode_data(const char *const start, struct s_libcorew
 
 // special
 
+# define MIN_INSTRUCTIONS_SIZE 3
+# define MAX_INSTRUCTIONS_SIZE 20
+# define MIN_INSTRUCTIONS (CHAMP_MAX_SIZE / MIN_INSTRUCTIONS_SIZE)
+# define MAX_INSTRUCTIONS (CHAMP_MAX_SIZE / MAX_INSTRUCTIONS_SIZE)
 struct									s_libcorewar_instruction
 {
-	uint8_t									content[4 + 4 * 4];
+	uint8_t									content[MAX_INSTRUCTIONS_SIZE];
 	size_t									content_size;
 	const struct s_libcorewar_opcode_info	*info;
 };
@@ -192,7 +195,10 @@ struct									s_libcorewar_cor_instructions
 	size_t								instructions_count;
 };
 struct s_libcorewar_cor_instructions	*libcorewar_get_cor_instructions(struct s_libcorewar_cor_file *const file);
+struct s_libcorewar_cor_instructions    *libcorewar_get_cor_instructions_empty_sets(void);
 void									libcorewar_unset_cor_instructions(struct s_libcorewar_cor_instructions *const file);
+
+
 
 void							*libcorewar_error(char *const ptr, char **const error_ptr, ...);
 
@@ -273,6 +279,39 @@ void										libcorewar_dump(const int fd, struct s_libcorewar_arena *const are
 void										libcorewar_dump_colors(const int fd, struct s_libcorewar_arena *const arena);
 void										libcorewar_dump_binary(const int fd, struct s_libcorewar_arena *const arena);
 typedef void								(*t_libcorewar_dump_function)(const int fd, struct s_libcorewar_arena *const arena);
+
+// generate & adn instructions
+
+typedef struct s_libcorewar_adn_instruction t_libcorewar_adn_instruction;
+struct                                      s_libcorewar_adn_instruction
+{
+    uint8_t                                 content[MAX_INSTRUCTIONS_SIZE];
+    size_t                                  content_size;
+    struct s_libcorewar_adn_instruction     *next;
+};
+
+struct                                      s_libcorewar_cor_adn
+{
+    uint8_t                                 memory[CHAMP_MAX_SIZE]; // don't need that ???
+    size_t                                  memory_size;
+    struct s_libcorewar_adn_instruction     *head;
+    size_t                                  count;
+};
+
+struct s_libcorewar_cor_adn                 *libcorewar_get_cor_adn_from_cor_file(struct s_libcorewar_cor_file *const cor);
+struct s_libcorewar_cor_adn                 *libcorewar_get_cor_adn(void);
+
+struct                                        s_libcorewar_adn_info
+{
+    const int                                parameters;
+    const int                                parameters_encoding;
+    const int                                parameters_direct_small;
+    const int                                opvalue;
+    const int                                parameters_type_isunic[MAX_ARGS_NUMBER];
+    const int                                parameters_type[MAX_ARGS_NUMBER];
+};
+
+void                                        libcorewar_get_random_adn_instruction(struct s_libcorewar_adn_instruction *const ins, uint64_t seed);
 
 
 #endif

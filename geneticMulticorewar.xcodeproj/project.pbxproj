@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88362DC123EB2212001EEBE9 /* libcorewar_instructions_generator.c in Sources */ = {isa = PBXBuildFile; fileRef = 88362DC023EB2212001EEBE9 /* libcorewar_instructions_generator.c */; };
 		887C2B1C23E5830E00C9329A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B1B23E5830E00C9329A /* main.m */; };
 		887C2B2523E583A700C9329A /* vm.metal in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B2423E583A700C9329A /* vm.metal */; };
 		887C2B2A23E5888100C9329A /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 887C2B2923E5888100C9329A /* Utility.m */; };
@@ -101,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		88362DBF23EB2212001EEBE9 /* libcorewar_instructions_generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libcorewar_instructions_generator.h; sourceTree = "<group>"; };
+		88362DC023EB2212001EEBE9 /* libcorewar_instructions_generator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libcorewar_instructions_generator.c; sourceTree = "<group>"; };
 		887C2B1823E5830E00C9329A /* geneticMulticorewar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = geneticMulticorewar; sourceTree = BUILT_PRODUCTS_DIR; };
 		887C2B1B23E5830E00C9329A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		887C2B2423E583A700C9329A /* vm.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vm.metal; sourceTree = "<group>"; };
@@ -306,6 +309,8 @@
 				C4E1FDA423E8519000E2EF22 /* libcorewar_get_asm_file.c */,
 				C4E1FDA123E8519000E2EF22 /* libcorewar_get_cor_file.c */,
 				C4E1FD9623E8518F00E2EF22 /* libcorewar_get_cor_instructions.c */,
+				88362DBF23EB2212001EEBE9 /* libcorewar_instructions_generator.h */,
+				88362DC023EB2212001EEBE9 /* libcorewar_instructions_generator.c */,
 				C4E1FD8F23E8518E00E2EF22 /* libcorewar_get_opcode.c */,
 				C4E1FD9023E8518E00E2EF22 /* libcorewar_get_src_file.c */,
 				C4E1FDA523E8519000E2EF22 /* libcorewar_out_asm_file.c */,
@@ -393,6 +398,7 @@
 				C4DF9EAD23E862220014DA54 /* i.c in Sources */,
 				C4DF9EAE23E862220014DA54 /* b.c in Sources */,
 				C4DF9EAF23E862220014DA54 /* u.c in Sources */,
+				88362DC123EB2212001EEBE9 /* libcorewar_instructions_generator.c in Sources */,
 				C4DF9EB023E862220014DA54 /* w.c in Sources */,
 				C4DF9EB123E862220014DA54 /* o.c in Sources */,
 				C4DF9EB223E862220014DA54 /* e.c in Sources */,

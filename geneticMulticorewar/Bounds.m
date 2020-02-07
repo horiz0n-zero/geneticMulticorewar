@@ -6,11 +6,10 @@
 //  Copyright © 2020 Antoine Feuerstein. All rights reserved.
 //
 
-#import "Bounds.h"
 #import "Multicorewar.h"
 
 @interface Bounds () {
-    id <MTLBuffer>       _vm_buffer;
+    __weak Multicorewar *_multicorewar;
 }
 
 @end
@@ -18,11 +17,20 @@
 
 - (instancetype)init:(Multicorewar *const)multicorewar {
     self = [super init];
+    self->_multicorewar = multicorewar;
     
-    self->_vm_buffer = [[multicorewar device] newBufferWithLength:sizeof(struct vm_arena) * VM_TOTAL
-                                                          options:MTLResourceStorageModeShared];
+    void *const ptr = malloc(g_information.arenas_memory_size);
     
+    if (!ptr)
+        [[Utility shared] fatalErrno:@"bounds allocation"];
+    [self setBuffer:[[multicorewar device] newBufferWithBytesNoCopy:ptr length:g_information.arenas_memory_size
+                                                            options:MTLResourceStorageModeShared deallocator:^(void *ptr, NSUInteger size){
+        free(ptr);
+    }]];
+    bzero([[self buffer] contents], g_information.arenas_memory_size);
+    [[Utility shared] messageCPU:"ok: new bounds with size: %lu\nok: bzero\n", g_information.arenas_memory_size];
     return self;
 }
+
 
 @end

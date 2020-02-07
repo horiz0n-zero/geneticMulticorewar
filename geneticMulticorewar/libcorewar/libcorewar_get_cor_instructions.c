@@ -32,20 +32,13 @@ static const struct s_libcorewar_opcode_info		g_opcodes_info[256] =
 	[0x10] = {"aff",   1, 2,    1, 0, 0x10, 0, {T_REG}}
 };
 
-static const size_t									g_parameters_size[] =
-{
-	[REG_CODE] = REG_SIZE,
-	[IND_CODE] = IND_SIZE,
-	[DIR_CODE] = DIR_SIZE
-};
-
 static size_t										get_cor_instruction_size(
 	const struct s_libcorewar_opcode_info *const info,
 	char *content)
 {
 	int												index;
 	int												r;
-	char											encode;// 10(DIR,4) 11(IND,2) 01(REG,1)
+	uint8_t									    	encode;// 10(DIR,4) 11(IND,2) 01(REG,1)
 	size_t											size;
 
 	index = 0;
@@ -56,16 +49,22 @@ static size_t										get_cor_instruction_size(
 	}
 	else
 	{
-		if (info->parameters_direct_small)
-			encode = 0b11000000;
-		else
-			encode = 0b10000000;
+        encode = DIR_CODE << 6;
 		size = 1;
 	}
 	while (index < info->parameters)
 	{
 		r = (((int)encode << (index << 1)) >> 6) & 0b00000011;
-		size += g_parameters_size[r];
+		if (r == REG_CODE)
+            size += REG_SIZE;
+        else if (r == IND_CODE)
+            size += IND_SIZE;
+        else {
+            if (info->parameters_direct_small)
+                size += IND_SIZE;
+            else
+                size += DIR_SIZE;
+        }
 		++index;
 	}
 	return (size);
@@ -81,7 +80,7 @@ struct s_libcorewar_cor_instructions			*libcorewar_get_cor_instructions(struct s
 
 	struct s_libcorewar_instruction				*ins;
 
-	new->instructions = malloc(sizeof(void*) * 1024);
+	new->instructions = malloc(sizeof(void*) * MAX_INSTRUCTIONS);
 	new->instructions_count = 0;
 	if (new)
 	{
@@ -120,7 +119,20 @@ void											libcorewar_unset_cor_instructions(struct s_libcorewar_cor_instruc
 	}
 }
 
-
+struct s_libcorewar_cor_instructions            *libcorewar_get_cor_instructions_empty_sets(void)
+{
+    struct s_libcorewar_cor_instructions *const new = malloc(sizeof(struct s_libcorewar_cor_instructions));
+    int                                         index;
+    
+    new->instructions = malloc(sizeof(void*) * MAX_INSTRUCTIONS);
+    new->instructions_count = 0;
+    index = 0;
+    while (index < MAX_INSTRUCTIONS) {
+        new->instructions[index] = malloc(sizeof(struct s_libcorewar_instruction));
+        ++index;
+    }
+    return (new);
+}
 
 
 

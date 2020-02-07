@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init:(Multicorewar *const)multicorewar;
 
+@property(nonatomic, assign) NSUInteger index;
+
+@property(nonatomic, strong) id <MTLBuffer> buffer;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
