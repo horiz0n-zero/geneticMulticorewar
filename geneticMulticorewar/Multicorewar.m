@@ -8,6 +8,7 @@
 
 #import "Multicorewar.h"
 #include <dirent.h>
+#include <objc/runtime.h>
 
 static int                           _seed_fd_source = 0;
 
@@ -229,6 +230,7 @@ static int                           _seed_fd_source = 0;
     }
     [[Utility shared] messageCPU:"ok: generate %d champions\n", THREADS_TOTAL];
     self->_bounds = [[Bounds alloc] init:self];
+    [self objectSee:self->_device];
     [self startMachine];
     return self;
 }
@@ -307,7 +309,8 @@ static int                           _seed_fd_source = 0;
 static int _generation = 0;
 - (void)startMachine {
     id <MTLCommandBuffer> commandBuffer = [self encodeCommandBuffer:YES];
-    
+
+    return [self objectSee:commandBuffer];
     [self->_champions makeObjectsPerformSelector:@selector(setWinCount:) withObject:NULL];
     [commandBuffer addScheduledHandler:^(id <MTLCommandBuffer> buffer){
         [[Utility shared] messageGPU:"commandBuffer scheduled\n"];
@@ -384,7 +387,35 @@ static int _generation = 0;
     }
 }
 
-
+- (void)objectSee:(const id)object {
+    Ivar                  *ptr_ivar = nil;
+    unsigned int          count_ivar = 0;
+    objc_property_t       *ptr_property = nil;
+    unsigned int          count_property = 0;
+    Method                *ptr_method = nil;
+    unsigned int          count_method = 0;
+    
+    unsigned int index;
+    ft_printf("objectSee: %s\n", object_getClassName(object));
+    ptr_ivar = class_copyIvarList([object class], &count_ivar);
+    index = 0;
+    while (index < count_ivar) {
+        ft_printf("ivar: %s\n", ivar_getName(*ptr_ivar++));
+        ++index;
+    }
+    ptr_property = class_copyPropertyList([object class], &count_property);
+    index = 0;
+    while (index < count_property) {
+        ft_printf("property: %s\n", property_getName(*ptr_property++));
+        ++index;
+    }
+    ptr_method = class_copyMethodList([object class], &count_method);
+    index = 0;
+    while (index < count_method) {
+        ft_printf("method: %s\n", sel_getName(method_getName(*ptr_method++)));
+        ++index;
+    }
+}
 
 
 
